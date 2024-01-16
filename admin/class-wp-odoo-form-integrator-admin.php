@@ -419,7 +419,7 @@ class Wp_Odoo_Form_Integrator_Admin {
 		$result = $wpdb->get_row($sql);
 		$rec_count = $result->total;
 		if( isset($_GET{'pageno'} ) ) {
-	        $page = $_GET{'pageno'}-1;
+	        $page = $_GET['pageno']-1;
 	        $offset = $rec_limit * $page ;
 	    }else {
 	        $page = 0;
